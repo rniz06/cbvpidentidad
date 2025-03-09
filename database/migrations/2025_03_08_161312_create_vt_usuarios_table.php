@@ -24,6 +24,7 @@ return new class extends Migration
                 users.deleted_at,
                 personalcbvp.vt_personales.nombrecompleto,
                 personalcbvp.vt_personales.codigo,
+                personalcbvp.vt_personales.categoria_id,
                 personalcbvp.vt_personales.categoria
             FROM users
             JOIN personalcbvp.vt_personales ON (personalcbvp.vt_personales.idpersonal = users.personal_id);
